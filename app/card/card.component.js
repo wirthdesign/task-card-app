@@ -8,23 +8,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.task1 = {
-            content: "Learn Angular2",
-            completed: false
-        };
+var core_1 = require('@angular/core');
+var task_1 = require('../model/task');
+var CardComponent = (function () {
+    function CardComponent() {
     }
-    return AppComponent;
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', task_1.Task)
+    ], CardComponent.prototype, "task", void 0);
+    CardComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'app-card',
+            templateUrl: 'card.component.html',
+            styleUrls: ['card.component.css']
+        }), 
+        __metadata('design:paramtypes', [])
+    ], CardComponent);
+    return CardComponent;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'my-app',
-        templateUrl: 'app.component.html'
-    }),
-    __metadata("design:paramtypes", [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.CardComponent = CardComponent;
+//# sourceMappingURL=card.component.js.map
