@@ -12,7 +12,7 @@
       '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.min.js',
       '@angular/http': 'npm:@angular/http/bundles/http.umg.js',
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
-      '@angular/forms': 'npm:@angular/router/bundles/forms.umd.js',
+      '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 
       'rxjs': 'npm:rxjs',
       'angular-in-memoery-web-api': 'npm:angular-in-memoery-web-api'
