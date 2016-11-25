@@ -9,12 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var task_1 = require("./model/task");
 var AppComponent = (function () {
     function AppComponent() {
-        this.task1 = {
-            content: "Learn Angular2",
-            completed: false
-        };
+        this.tasks = [
+            new task_1.Task("Buy a pizza", false),
+            new task_1.Task("Walk like a pirate", false)
+        ];
     }
     return AppComponent;
 }());
