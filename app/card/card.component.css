@@ -7,6 +7,18 @@
 .card {
   border-radius: 0;
   cursor: pointer;
+  position: relative
+}
+
+.hidden {
+  display: none;
+}
+
+.card-block i {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #000;
 }
 
 .card.completed,
