@@ -8,6 +8,12 @@
   border-radius: 0;
 }
 
+.card.completed,
+.card.completed .card-footer {
+  color: #ccc;
+  background-color: #eee;
+}
+
 .card-footer {
   text-align: right;
 }
