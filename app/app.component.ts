@@ -25,5 +25,7 @@ export class AppComponent {
   addTask() {
     let task = new Task(this.currentTask.content, this.currentTask.completed);
     this.tasks.push(task);
+    // Clear the input
+    this.currentTask.content = null;
   }
 }
